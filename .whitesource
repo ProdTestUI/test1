@@ -1,15 +1,30 @@
 {
   "scanSettings": {
     "configMode": "AUTO",
-	"configExternalURL": "" 
+    "configExternalURL": "",
     "projectToken": "",
-	"baseBranches": []
+    "baseBranches": []
   },
   "checkRunSettings": {
+    "vulnerableCheckRunConclusionLevel": "none",
     "displayMode": "diff",
-    "vulnerableCheckRunConclusionLevel": "failure"
+    "useMendCheckNames": true
   },
   "issueSettings": {
-    "minSeverityLevel": "LOW"
+    "minSeverityLevel": "NONE",
+    "issueType": "DEPENDENCY"
+  },
+  "remediateSettings": {
+    "workflowRules": {
+      "enabled": false
+    }
+  },
+  "scanSettingsSAST": {
+    "enableScan": "true"
+  },
+  "checkRunSettingsSAST": {
+    "checkRunConclusionLevel": "success",
+    "severityThreshold": "medium"
   }
 }
+
